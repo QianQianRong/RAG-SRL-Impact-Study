@@ -46,12 +46,17 @@ By analyzing data from **102 participants**, this study provides high statistica
 ---
 
 ## 🛠️ Usage
-Create a virtual environment and install dependencies:
 
-```bash
+### 1. Setup Environment
+**PowerShell**
+```powershell
+# Create a virtual environment
 python -m venv .venv
-# Windows PowerShell
+
+# Activate the environment
 .\.venv\Scripts\Activate.ps1
+
+# Install dependencies
 pip install -r requirements.txt
 
 ## Run
