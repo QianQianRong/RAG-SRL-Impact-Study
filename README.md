@@ -57,6 +57,12 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+Optional (export Plotly figures to PNG in addition to HTML):
+
+```bash
+pip install -U kaleido
+```
+
 ## Run
 
 Place your Excel file in the repo root (default: `data_all.xlsx`) and run:
