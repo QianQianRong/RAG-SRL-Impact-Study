@@ -54,8 +54,6 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
----
-
 ## Run
 
 Place your Excel file in the repo root (default: `data_all.xlsx`) and run:
@@ -63,6 +61,7 @@ Place your Excel file in the repo root (default: `data_all.xlsx`) and run:
 ```bash
 python analysis.py
 ```
+
 
 ## 📜 Reference
 [Analysis Code](https://github.com/peculab/genai-psafety)
