@@ -1,4 +1,76 @@
-SRL-RAG-STEM-Learning-Study (N=102)探討生成式 AI 結合自我調節學習與 RAG 技術對高中生 STEM 學習之影響Exploring the Impact of Generative AI with SRL and RAG on High School STEM LearningInstructor: Pecu Tsai📝 Project Overview本儲存庫包含一項隨機對照試驗 (RCT) 的數據與分析，旨在探討整合自我調節學習 (SRL) 與 檢索增強生成 (RAG) 的 AI 代理人，如何作為高中生實作「智慧路燈」專題時的認知與心理支架。本研究分析了教學介入對學生學科知識、程式設計自我效能感 (CPSES)、認知負荷 (CLQ) 及 學習投入度 的影響。透過 102 名參與者的樣本量，本研究展現了強大的統計檢定力，驗證 AI 工具在教育場域的心理與表現效應。📊 Key Findings (N=102)1. 效能感與知識水平的顯著飛躍 ($p < .001$)程式自我效能 (CPSES)：在排除前測差異後，實驗組表現顯著優於對照組 ($F(1, 99) = 6741.41$, $p < .001$)，且具備極大的效應量 ($\eta_p^2 = .986$)。學科知識增益：AI 代理人顯著提升了學生的 STEM 知識掌握度 ($F(1, 99) = 776.78$, $p < .001$)。So What? AI 不僅是提供答案的工具，更是透過 RAG 技術精準餵養知識，有效協助高中生克服程式開發初期的挫折感。2. 認知負荷的成功優化 ($p < .001$)負荷減輕：t 檢定結果顯示實驗組的認知負荷顯著低於對照組 ($t(100) = -50.57, p < .001, d = 10.01$)。So What? AI 代理人扮演了「智慧濾波器」，減少了學生在海量資料中搜尋與過濾的無效勞動，使其能專注於核心的邏輯建構。3. 學習投入度的全面提升 ($p < .001$)高度投入：實驗組在行為、認知與情感維度上的投入度均呈現爆發式成長 ($t(100) = 96.47, p < .001$)。So What? 良好的互動機制與 SRL 導引引發了正向的情緒反饋，使學生在面對困難的硬體接線與除錯任務時更具韌性。4. 作品評鑑的客觀性與高品質 ($ICC = .992$)評分可靠度：針對智慧路燈作品的 CPAM 評分，評分者間信度達極佳水準 ($p < .001$)。So What? 極高的一致性證明了作品質量的提升是客觀事實，而非主觀偏好。🔬 Methodology & StatisticsParticipants: $N = 102$ ($n_{exp} = 51, n_{ctrl} = 51$)。Analysis: 共變數分析 (ANCOVA)、獨立樣本 t 檢定 (t-test)、評分者間信度 (ICC)。Effect Size: 所有核心指標均展現出顯著且巨大的效應量（Effect Size）。🛠️ UsageSetupPowerShellpython -m venv .venv
+# SRL-RAG-STEM-Learning-Study (N=102)
+### 探討生成式 AI 結合自我調節學習與 RAG 技術對高中生 STEM 學習之影響
+### Exploring the Impact of Generative AI with SRL and RAG on High School STEM Learning
+### Instructor: [Pecu Tsai](https://github.com/pecu)
+
+## 📝 Project Overview
+This repository contains the dataset and analysis for a randomized controlled trial (RCT) investigating how AI Agents integrating **Self-Regulated Learning (SRL)** and **Retrieval-Augmented Generation (RAG)** function as cognitive and psychological scaffolds for high school students.
+
+Situated in Taiwan—within high school STEM practical courses—this study examines the intervention's impact on **AIoT-STEM Knowledge**, **Programming Self-Efficacy (CPSES)**, **Cognitive Load (CLQ)**, and **Learning Engagement** during a 10-week "Smart Streetlight" project.
+
+By analyzing data from **102 participants**, this study provides high statistical power to explore the psychological and performance-based effects of AI pedagogical agents in a hands-on learning environment.
+
+## 📊 Key Findings (N=102)
+
+### 1. Robust Empowerment in Self-Efficacy ($p < .001$)
+* **Cognitive Scaffolding**: Participants using AI Agents (SRL+RAG) demonstrated a significant leap in programming self-efficacy ($F(1, 99) = 6741.41$, $p < .001$) and subject knowledge ($F(1, 99) = 776.78$, $p < .001$).
+* **Effect Size**: The intervention showed a partial eta squared ($\eta_p^2$) of **.986** for self-efficacy, indicating a near-universal positive impact.
+* **So What?** AI acts as a "performance cue" that simplifies complex programming logic into manageable technical execution, allowing students to overcome the "anxiety of coding".
+
+### 2. Significant Optimization of Cognitive Load ($p < .001$)
+* **Cognitive Firewall**: The **Experimental Group** exhibited a pronounced reduction in extraneous cognitive load ($t(100) = -50.57, p < .001, d = 10.01$) compared to the Control Group.
+* **So What?** RAG technology serves as a "knowledge filter," protecting students from information overload and allowing them to allocate more mental resources to core problem-solving.
+
+### 3. Emotional Buffer through Learning Engagement ($p < .001$)
+* **Resilience Loop**: In the face of complex hardware debugging, the **AI Group** maintained a stable and significantly higher engagement state ($t(100) = 96.47, p < .001, d = 19.10$).
+* **So What?** SRL-integrated AI initiates a cycle of social validation and immediate feedback that slowly internalizes into sustained motivation and emotional resilience.
+
+### 4. High-Quality Performance Verification ($ICC = .992$)
+* **Rating Reliability**: The **CPAM matrix** analysis revealed extremely high inter-rater reliability, confirming the objective quality of students' "Smart Streetlight" projects.
+* **So What?** Practical success, validated by objective criteria, is the most effective way to transition students from passive learners into "performance-based" creators.
+
+---
+
+## 🔬 Methodology & Statistics
+* **Participants**: $N = 102$ ($n_{exp} = 51, n_{ctrl} = 51$).
+* **Analysis**: Analysis of Covariance (ANCOVA), Independent Samples T-test, and Inter-rater Reliability (ICC).
+* **Reliability**: High internal consistency across all scales (Cronbach's $\alpha$: 0.75–0.90).
+
+## 📖 中文摘要
+本研究採隨機對照實驗（$N=102$），探討整合「自我調節學習 (SRL)」與「檢索增強生成 (RAG)」之 AI 代理人對高中生 STEM 學習之影響。核心發現如下：
+1. **效能賦能**：AI 支架顯著拉抬程式設計自我效能感 ($p < .001$)，並建立學生的技術表現基準點。
+2. **認知減壓**：RAG 技術精準支援知識檢索，顯著降低學習過程中的不必要認知負荷 ($p < .001$)。
+3. **情緒緩衝**：AI 互動與 SRL 引導有效提升學生的學習投入度，進而增強面對複雜實作任務時的情緒韌性。
+4. **品質保證**：經 CPAM 評分矩陣驗證，實驗組作品在功能完整性與邏輯性上展現顯著優勢 ($ICC = .992$)。
+
+---
+
+## 🛠️ Usage
+
+Create a virtual environment and install dependencies:
+
+```bash
+
+python -m venv .venv
+# Windows PowerShell
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-Run AnalysisPowerShellpython analysis.py
+```
+
+Optional (export Plotly figures to PNG in addition to HTML):
+
+```bash
+pip install -U kaleido
+```
+
+## Run
+
+Place your Excel file in the repo root (default: `data_all.xlsx`) and run:
+
+```bash
+python analysis.py
+```
+
+
+## 📜 Reference
+[Analysis Code](https://github.com/peculab/genai-psafety)
